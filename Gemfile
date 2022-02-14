@@ -4,8 +4,8 @@ source "https://rubygems.org"
 
 gem "active_record_union"
 gem "base32"
-gem "devise"
-gem "font-awesome-rails"
+gem "devise", ">= 4.6.2"
+gem "font-awesome-rails", ">= 4.7.0.5"
 gem "grape"
 gem "grape-entity"
 gem "grape-swagger"
@@ -22,12 +22,12 @@ gem "omniauth-openid"
 gem "omniauth_openid_connect"
 gem "public_activity", "~> 1.6.3"
 gem "pundit"
-gem "rails", "~> 5.2.0"
+gem "rails", "~> 5.2.6", ">= 5.2.6.2"
 gem "redcarpet"
-gem "sassc-rails"
+gem "sassc-rails", ">= 2.1.0"
 gem "search_cop"
 gem "slim"
-gem "webpack-rails"
+gem "webpack-rails", ">= 0.9.11"
 
 gem "rack-cors"
 
@@ -43,7 +43,7 @@ gem "typhoeus"
 gem "bcrypt"
 
 # If the deployment is done through Puma, include it in the bundle.
-gem "puma"
+gem "puma", ">= 4.3.11"
 
 # Configuration management
 gem "cconfig", "~> 1.2.0"
@@ -55,7 +55,7 @@ gem "minitest"
 gem "multi_json"
 gem "rails-dom-testing"
 gem "sprockets"
-gem "sprockets-rails"
+gem "sprockets-rails", ">= 3.2.1"
 gem "temple"
 
 ##
@@ -75,21 +75,21 @@ group :development do
   gem "pry-rails"
   gem "rack-mini-profiler", require: false
   gem "rails-erd"
-  gem "web-console"
+  gem "web-console", ">= 3.7.0"
 end
 
 group :development, :test do
   gem "rspec-core"
-  gem "rspec-rails"
+  gem "rspec-rails", ">= 3.8.2"
 
   gem "awesome_print"
   gem "binman"
   gem "brakeman", require: false
   gem "byebug"
   gem "database_cleaner"
-  gem "factory_bot_rails"
+  gem "factory_bot_rails", ">= 5.0.2"
   gem "ffaker"
-  gem "grape-swagger-rails"
+  gem "grape-swagger-rails", ">= 0.3.1"
   gem "hirb"
   gem "rubocop", require: false
   gem "wirb"
@@ -103,7 +103,7 @@ group :test do
   gem "docker-api"
   gem "json-schema"
   gem "poltergeist", require: false
-  gem "rails-controller-testing"
+  gem "rails-controller-testing", ">= 1.0.4"
   gem "selenium-webdriver"
   gem "shoulda"
   gem "simplecov", require: false
